@@ -1,9 +1,23 @@
-document.getElementById('fetchBtn').addEventListener('click', () => {
+// Handle "Start Scraping" button
+document.getElementById("startBtn").addEventListener("click", () => {
+  const rawInput = document.getElementById("links").value;
 
-  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+  const links = rawInput
+    .split("\n")
+    .map(link => link.trim().replace(/[>\s]+$/g, ""))
+    .filter(link => link.startsWith("https://") && link.includes("linkedin.com/in"));
 
-    const tab = tabs[0];
+  if (links.length === 0) {
+    alert("Please enter at least one valid LinkedIn profile link.");
+    return;
+  }
 
-    document.getElementById('titleOutput').textContent = tab.title;
-  });
+  chrome.runtime.sendMessage({ type: "START_SCRAPING", links });
 });
+
+
+document.getElementById("viewBtn").addEventListener("click", () => {
+  chrome.tabs.create({ url: chrome.runtime.getURL("view.html") });
+});
+
+

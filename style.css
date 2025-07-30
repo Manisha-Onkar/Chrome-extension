@@ -5,41 +5,68 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  padding: 16px;
-  width: 250px;
-  background-color: #f9f9f9;
-  color: #333; 
- }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f3f4f6;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+}
 
 h3 {
-  text-align: center;
-  margin-bottom: 12px;
-  font-size: 18px;
+  margin-bottom: 15px;
+  color: #1a73e8;
+  font-size: 20px;
+}
+
+textarea {
+  width: 150px;
+  padding: 9px;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: monospace;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+#links{
+  color: #155ab6;
+
 }
 
 button {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  padding: 8px 16px;
-  background-color: #007bff;
+  background-color: #1a73e8;
   color: white;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  padding: 10px 15px;
   font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#viewBtn{
+  margin-top: 5px;
 }
 
 button:hover {
-  background-color: #1f67db;
+  background-color: #155ab6;
 }
 
-p {
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 16px;
-  font-weight: bold;
-  word-wrap: break-word;
-  font-size: 14px;
-}
+
+
