@@ -1,23 +1,42 @@
-# Tab Title Fetcher
+# Tab Title & LinkedIn Scraper Chrome Extension 🚀
 
-A simple Chrome Extension that fetches and displays the title of the current browser tab.
+A simple Chrome Extension that **fetches the title of the current tab** and also **scrapes LinkedIn profile information** like name, location, followers, etc.
 
-## How it works
+---
 
-1. Click the extension icon
-2. Click the "Fetch Title" button
-3. The tab's title appears below
+## 🔧 Features
 
-## Files
+- ✅ Fetch and display the title of the current browser tab  
+- ✅ Scrape LinkedIn profile data (name, URL, bio, location, followers, connections)  
+- ✅ Send scraped data to a backend API
 
-- `manifest.json`: Chrome Extension config
-- `popup.html`: UI layout
-- `popup.js`: Logic to fetch and display title
+---
+
+## 🖥️ How It Works
+
+### 1. **Tab Title Fetching**
+- Click the extension icon  
+- Click the **"Fetch Title"** button  
+- The tab’s title appears below
+
+### 2. **LinkedIn Profile Scraper**
+- Add LinkedIn profile links in the popup  
+- Click **Start**  
+- The extension opens LinkedIn links one by one  
+- Extracts:
+  - Name
+  - Location
+  - About/Bio
+  - Followers
+  - Connections  
+- Sends this data to your backend
+
+---
 
 ## Installation
 
 1. Clone the repo
 2. Go to `chrome://extensions/`
 3. Enable Developer Mode
-4. Click "Load Unpacked" and select this folder
+
 
