@@ -1,4 +1,4 @@
-# Tab Title & LinkedIn Scraper Chrome Extension 🚀
+# LinkedIn Scraper Chrome Extension 🚀
 
 A simple Chrome Extension that **fetches the title of the current tab** and also **scrapes LinkedIn profile information** like name, location, followers, etc.
 
